@@ -1,0 +1,415 @@
+{
+  "shape": {
+    "rows": 235795,
+    "columns": 56
+  },
+  "column_names": [
+    "FILENAME",
+    "URL",
+    "URLLength",
+    "Domain",
+    "DomainLength",
+    "IsDomainIP",
+    "TLD",
+    "URLSimilarityIndex",
+    "CharContinuationRate",
+    "TLDLegitimateProb",
+    "URLCharProb",
+    "TLDLength",
+    "NoOfSubDomain",
+    "HasObfuscation",
+    "NoOfObfuscatedChar",
+    "ObfuscationRatio",
+    "NoOfLettersInURL",
+    "LetterRatioInURL",
+    "NoOfDegitsInURL",
+    "DegitRatioInURL",
+    "NoOfEqualsInURL",
+    "NoOfQMarkInURL",
+    "NoOfAmpersandInURL",
+    "NoOfOtherSpecialCharsInURL",
+    "SpacialCharRatioInURL",
+    "IsHTTPS",
+    "LineOfCode",
+    "LargestLineLength",
+    "HasTitle",
+    "Title",
+    "DomainTitleMatchScore",
+    "URLTitleMatchScore",
+    "HasFavicon",
+    "Robots",
+    "IsResponsive",
+    "NoOfURLRedirect",
+    "NoOfSelfRedirect",
+    "HasDescription",
+    "NoOfPopup",
+    "NoOfiFrame",
+    "HasExternalFormSubmit",
+    "HasSocialNet",
+    "HasSubmitButton",
+    "HasHiddenFields",
+    "HasPasswordField",
+    "Bank",
+    "Pay",
+    "Crypto",
+    "HasCopyrightInfo",
+    "NoOfImage",
+    "NoOfCSS",
+    "NoOfJS",
+    "NoOfSelfRef",
+    "NoOfEmptyRef",
+    "NoOfExternalRef",
+    "label"
+  ],
+  "dtypes": {
+    "int64": 41,
+    "float64": 10,
+    "str": 5
+  },
+  "dtype_per_column": {
+    "FILENAME": "str",
+    "URL": "str",
+    "URLLength": "int64",
+    "Domain": "str",
+    "DomainLength": "int64",
+    "IsDomainIP": "int64",
+    "TLD": "str",
+    "URLSimilarityIndex": "float64",
+    "CharContinuationRate": "float64",
+    "TLDLegitimateProb": "float64",
+    "URLCharProb": "float64",
+    "TLDLength": "int64",
+    "NoOfSubDomain": "int64",
+    "HasObfuscation": "int64",
+    "NoOfObfuscatedChar": "int64",
+    "ObfuscationRatio": "float64",
+    "NoOfLettersInURL": "int64",
+    "LetterRatioInURL": "float64",
+    "NoOfDegitsInURL": "int64",
+    "DegitRatioInURL": "float64",
+    "NoOfEqualsInURL": "int64",
+    "NoOfQMarkInURL": "int64",
+    "NoOfAmpersandInURL": "int64",
+    "NoOfOtherSpecialCharsInURL": "int64",
+    "SpacialCharRatioInURL": "float64",
+    "IsHTTPS": "int64",
+    "LineOfCode": "int64",
+    "LargestLineLength": "int64",
+    "HasTitle": "int64",
+    "Title": "str",
+    "DomainTitleMatchScore": "float64",
+    "URLTitleMatchScore": "float64",
+    "HasFavicon": "int64",
+    "Robots": "int64",
+    "IsResponsive": "int64",
+    "NoOfURLRedirect": "int64",
+    "NoOfSelfRedirect": "int64",
+    "HasDescription": "int64",
+    "NoOfPopup": "int64",
+    "NoOfiFrame": "int64",
+    "HasExternalFormSubmit": "int64",
+    "HasSocialNet": "int64",
+    "HasSubmitButton": "int64",
+    "HasHiddenFields": "int64",
+    "HasPasswordField": "int64",
+    "Bank": "int64",
+    "Pay": "int64",
+    "Crypto": "int64",
+    "HasCopyrightInfo": "int64",
+    "NoOfImage": "int64",
+    "NoOfCSS": "int64",
+    "NoOfJS": "int64",
+    "NoOfSelfRef": "int64",
+    "NoOfEmptyRef": "int64",
+    "NoOfExternalRef": "int64",
+    "label": "int64"
+  },
+  "missing_values": {
+    "total": 0,
+    "per_column": {}
+  },
+  "duplicates": 0,
+  "target_distribution": {
+    "1": 134850,
+    "0": 100945
+  },
+  "class_imbalance_ratio": 1.3359,
+  "outliers": {
+    "URLLength": {
+      "count": 22493,
+      "percentage": 9.54,
+      "Q1": 23.0,
+      "Q3": 34.0,
+      "IQR": 11.0
+    },
+    "DomainLength": {
+      "count": 13474,
+      "percentage": 5.71,
+      "Q1": 16.0,
+      "Q3": 24.0,
+      "IQR": 8.0
+    },
+    "IsDomainIP": {
+      "count": 638,
+      "percentage": 0.27,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "CharContinuationRate": {
+      "count": 679,
+      "percentage": 0.29,
+      "Q1": 0.68,
+      "Q3": 1.0,
+      "IQR": 0.32
+    },
+    "URLCharProb": {
+      "count": 8569,
+      "percentage": 3.63,
+      "Q1": 0.0507,
+      "Q3": 0.0629,
+      "IQR": 0.0121
+    },
+    "TLDLength": {
+      "count": 2134,
+      "percentage": 0.91,
+      "Q1": 2.0,
+      "Q3": 3.0,
+      "IQR": 1.0
+    },
+    "NoOfSubDomain": {
+      "count": 57389,
+      "percentage": 24.34,
+      "Q1": 1.0,
+      "Q3": 1.0,
+      "IQR": 0.0
+    },
+    "HasObfuscation": {
+      "count": 485,
+      "percentage": 0.21,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfObfuscatedChar": {
+      "count": 485,
+      "percentage": 0.21,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "ObfuscationRatio": {
+      "count": 485,
+      "percentage": 0.21,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfLettersInURL": {
+      "count": 19662,
+      "percentage": 8.34,
+      "Q1": 10.0,
+      "Q3": 20.0,
+      "IQR": 10.0
+    },
+    "LetterRatioInURL": {
+      "count": 1417,
+      "percentage": 0.6,
+      "Q1": 0.435,
+      "Q3": 0.594,
+      "IQR": 0.159
+    },
+    "NoOfDegitsInURL": {
+      "count": 51461,
+      "percentage": 21.82,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "DegitRatioInURL": {
+      "count": 51461,
+      "percentage": 21.82,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfEqualsInURL": {
+      "count": 5401,
+      "percentage": 2.29,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfQMarkInURL": {
+      "count": 6130,
+      "percentage": 2.6,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfAmpersandInURL": {
+      "count": 887,
+      "percentage": 0.38,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfOtherSpecialCharsInURL": {
+      "count": 12380,
+      "percentage": 5.25,
+      "Q1": 1.0,
+      "Q3": 3.0,
+      "IQR": 2.0
+    },
+    "SpacialCharRatioInURL": {
+      "count": 3344,
+      "percentage": 1.42,
+      "Q1": 0.038,
+      "Q3": 0.083,
+      "IQR": 0.045
+    },
+    "IsHTTPS": {
+      "count": 51256,
+      "percentage": 21.74,
+      "Q1": 1.0,
+      "Q3": 1.0,
+      "IQR": 0.0
+    },
+    "LineOfCode": {
+      "count": 19280,
+      "percentage": 8.18,
+      "Q1": 18.0,
+      "Q3": 1277.0,
+      "IQR": 1259.0
+    },
+    "LargestLineLength": {
+      "count": 17503,
+      "percentage": 7.42,
+      "Q1": 200.0,
+      "Q3": 8047.0,
+      "IQR": 7847.0
+    },
+    "HasTitle": {
+      "count": 32714,
+      "percentage": 13.87,
+      "Q1": 1.0,
+      "Q3": 1.0,
+      "IQR": 0.0
+    },
+    "NoOfURLRedirect": {
+      "count": 31464,
+      "percentage": 13.34,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfSelfRedirect": {
+      "count": 9457,
+      "percentage": 4.01,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfPopup": {
+      "count": 13411,
+      "percentage": 5.69,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfiFrame": {
+      "count": 34441,
+      "percentage": 14.61,
+      "Q1": 0.0,
+      "Q3": 1.0,
+      "IQR": 1.0
+    },
+    "HasExternalFormSubmit": {
+      "count": 10372,
+      "percentage": 4.4,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "HasPasswordField": {
+      "count": 24113,
+      "percentage": 10.23,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "Bank": {
+      "count": 29967,
+      "percentage": 12.71,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "Pay": {
+      "count": 55885,
+      "percentage": 23.7,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "Crypto": {
+      "count": 5535,
+      "percentage": 2.35,
+      "Q1": 0.0,
+      "Q3": 0.0,
+      "IQR": 0.0
+    },
+    "NoOfImage": {
+      "count": 18362,
+      "percentage": 7.79,
+      "Q1": 0.0,
+      "Q3": 29.0,
+      "IQR": 29.0
+    },
+    "NoOfCSS": {
+      "count": 17906,
+      "percentage": 7.59,
+      "Q1": 0.0,
+      "Q3": 8.0,
+      "IQR": 8.0
+    },
+    "NoOfJS": {
+      "count": 11852,
+      "percentage": 5.03,
+      "Q1": 0.0,
+      "Q3": 15.0,
+      "IQR": 15.0
+    },
+    "NoOfSelfRef": {
+      "count": 15576,
+      "percentage": 6.61,
+      "Q1": 0.0,
+      "Q3": 88.0,
+      "IQR": 88.0
+    },
+    "NoOfEmptyRef": {
+      "count": 38885,
+      "percentage": 16.49,
+      "Q1": 0.0,
+      "Q3": 1.0,
+      "IQR": 1.0
+    },
+    "NoOfExternalRef": {
+      "count": 22780,
+      "percentage": 9.66,
+      "Q1": 1.0,
+      "Q3": 57.0,
+      "IQR": 56.0
+    }
+  },
+  "leakage_check": {
+    "note": "Kolom FILENAME, URL, Domain, TLD, Title dihapus karena berpotensi leakage dan tidak relevan sebagai fitur prediktif numerik.",
+    "columns_to_drop": [
+      "FILENAME",
+      "URL",
+      "Domain",
+      "TLD",
+      "Title"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "KNN": {
+    "total_errors": 5,
+    "total_samples": 2999,
+    "error_rate": 0.17,
+    "false_positives": 5,
+    "false_negatives": 0,
+    "true_positives": 1723,
+    "true_negatives": 1271,
+    "sample_errors": [
+      {
+        "index": 1134,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 14723,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 4584,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 12219,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 2065,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      }
+    ],
+    "top_differentiating_features": {
+      "TLDLength": 0.8317,
+      "CharContinuationRate": 0.6958,
+      "NoOfLettersInURL": 0.5715,
+      "LetterRatioInURL": 0.5681,
+      "IsHTTPS": 0.5069,
+      "URLLength": 0.48,
+      "DomainLength": 0.4565,
+      "NoOfOtherSpecialCharsInURL": 0.4201,
+      "SpacialCharRatioInURL": 0.2741,
+      "NoOfSubDomain": 0.2381
+    }
+  },
+  "Naive Bayes": {
+    "total_errors": 3,
+    "total_samples": 2999,
+    "error_rate": 0.1,
+    "false_positives": 2,
+    "false_negatives": 1,
+    "true_positives": 1722,
+    "true_negatives": 1274,
+    "sample_errors": [
+      {
+        "index": 1134,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 7392,
+        "actual": 1,
+        "predicted": 0,
+        "type": "False Negative"
+      },
+      {
+        "index": 4584,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      }
+    ],
+    "top_differentiating_features": {
+      "LetterRatioInURL": 0.8618,
+      "URLSimilarityIndex": 0.7423,
+      "CharContinuationRate": 0.6953,
+      "NoOfLettersInURL": 0.6268,
+      "DegitRatioInURL": 0.5079,
+      "IsHTTPS": 0.5066,
+      "NoOfOtherSpecialCharsInURL": 0.4622,
+      "URLLength": 0.4574,
+      "TLDLength": 0.4531,
+      "DomainLength": 0.3966
+    }
+  },
+  "SVM": {
+    "total_errors": 2,
+    "total_samples": 2999,
+    "error_rate": 0.07,
+    "false_positives": 2,
+    "false_negatives": 0,
+    "true_positives": 1723,
+    "true_negatives": 1274,
+    "sample_errors": [
+      {
+        "index": 1134,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      },
+      {
+        "index": 4584,
+        "actual": 0,
+        "predicted": 1,
+        "type": "False Positive"
+      }
+    ],
+    "top_differentiating_features": {
+      "TLDLegitimateProb": 1.0335,
+      "URLCharProb": 1.0162,
+      "URLSimilarityIndex": 0.742,
+      "CharContinuationRate": 0.6951,
+      "IsHTTPS": 0.5064,
+      "TLDLength": 0.453,
+      "DegitRatioInURL": 0.4013,
+      "NoOfOtherSpecialCharsInURL": 0.3562,
+      "SpacialCharRatioInURL": 0.347,
+      "NoOfDegitsInURL": 0.2746
+    }
+  }
+}

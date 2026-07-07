@@ -1,0 +1,2 @@
+repo dan dataset full : https://github.com/Alphared26/uas-ml-phishing-url/tree/main
+link video youtube presentasi : https://youtu.be/_5yuZSNSzMY
